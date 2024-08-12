@@ -20,14 +20,24 @@ git clone https://github.com/KelvinJC/qua-llm.git
 cd qua-llm
 ```
 
-* To begin using the application, initialise the server by running the following command
+* To begin chatting with the Chatbot, initialise the server by running the following command
 
 ```
 python main.py 
 ```
 
 ### Usage
-By default, the api server listens to requeststhrough on port 8888 so once the server is running, 
+By default, the api server listens to requests through on port 8888 so once the server is running, 
 copy and paste ```http://127.0.0.1:8888/chat``` into your Postman or any API client of your choice.<br>
 
 To prevent clashes on port 8888, make sure no other app is running locally on that port.
+
+Create a POST request specifying the body with two parameters `query` and `temperature`
+
+#### Example request
+```
+{
+"query": "Your query goes here"
+"temperature": "Enter a valid number between 0 and 2 here"
+}
+```
