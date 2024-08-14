@@ -48,6 +48,10 @@ To install all dependencies from the requirements.txt, run the following command
 pip install -r requirements.txt
 ```
 
+### API Key
+You will need an API key from the groq platfrom. Login to groq and create a free api key. 
+Store this key in a .env file following the pattern in the .env.example file.
+![](images/groq_api_key.png)
 
 ### Start usage
 To begin chatting with the Chatbot, initialise the server by running the following command
@@ -69,8 +73,8 @@ Create a POST request specifying the body with three parameters `model`, `query`
 
 ```
 {
+"query": "Your query goes here",
 "model": "llama-3.1-70b-versatile",
-"query": "Your query goes here"
 "temperature": "Enter a valid number between 0 and 2 here"
 }
 ```
