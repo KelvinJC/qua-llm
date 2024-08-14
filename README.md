@@ -20,13 +20,40 @@ git clone https://github.com/KelvinJC/qua-llm.git
 cd qua-llm
 ```
 
-* To begin chatting with the Chatbot, initialise the server by running the following command
+
+### Virtual environment
+As a standard practice in Python projects, create and activate your virtual environment.
+Run the following commands in your terminal (ideally from your VS Code):
+
+* create the virtual environment
+```
+     python -m venv .venv
+```
+* activate the virtual environment
+```
+    # Windows
+    source .venv/Scripts/activate
+
+    # Linux
+    source .venv/bin/activate
+```
+
+### Install dependencies
+To install all dependencies from the requirements.txt, run the following command in your terminal:
+
+```
+pip install -r requirements.txt
+```
+
+
+### Start usage
+To begin chatting with the Chatbot, initialise the server by running the following command
 
 ```
 python main.py 
 ```
 
-### Usage
+
 By default, the api server listens to requests through on port 8888 so once the server is running, 
 copy and paste ```http://127.0.0.1:8888/chat``` into your Postman or any API client of your choice.<br>
 
