@@ -1,7 +1,10 @@
 # qua llm
 
-A Q&A chatbot built around open source large language models (including Meta's Llama-3.1-70b, MistralAI's mixtral-8x7b-32768 ).
-
+A Q&A chatbot built around open source large language models including 
+```
+Meta's llama-3.1-70b and llama-3.1-8b,
+MistralAI's mixtral-8x7b-32768 
+```
 ### Mode of deployment
 The chatbot is deployed via a RESTful API. It uses the groq SDK which is a package in Python's library and FastAPI a web framework well suited to building API services. 
 
