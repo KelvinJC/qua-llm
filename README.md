@@ -3,7 +3,7 @@
 A Q&A chatbot built around open source large language models (including Meta's Llama-3.1-70b, MistralAI's mixtral-8x7b-32768 ).
 
 ### Mode of deployment
-The chatbot is deployed via a RESTful API. 
+The chatbot is deployed via a RESTful API. It uses the groq SDK which is a package in Python's library and FastAPI a web framework well suited to building API services. 
 
 
 ### Installation
@@ -23,7 +23,7 @@ cd qua-llm
 
 ### Virtual environment
 As a standard practice in Python projects, create and activate your virtual environment.
-Run the following commands in your terminal (ideally from your VS Code):
+Run the following commands in your terminal:
 
 * create the virtual environment
 ```
