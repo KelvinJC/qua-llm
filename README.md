@@ -48,10 +48,11 @@ To install all dependencies from the requirements.txt, run the following command
 pip install -r requirements.txt
 ```
 
-### API Key
+### Groq API Key
 You will need an API key from the groq platfrom. Login to groq and create a free api key. 
-Store this key in a .env file following the pattern in the .env.example file.
+
 ![](images/groq_api_key.png)
+Store this key in a .env file following the pattern in the .env.example file.
 
 ### Start usage
 To begin chatting with the Chatbot, initialise the server by running the following command
