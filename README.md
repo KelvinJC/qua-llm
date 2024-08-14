@@ -1,9 +1,12 @@
 # qua llm
 
-A Q&A chatbot built around open source large language models (including Meta's Llama-3.1-70b, MistralAI's mixtral-8x7b-32768 ).
-
+A Q&A chatbot built around open source large language models including 
+```
+Meta's llama-3.1-70b and llama-3.1-8b,
+MistralAI's mixtral-8x7b-32768 
+```
 ### Mode of deployment
-The chatbot is deployed via a RESTful API. 
+The chatbot is deployed via a RESTful API. It uses the groq SDK which is a package in Python's library and FastAPI a web framework well suited to building API services. 
 
 
 ### Installation
@@ -23,7 +26,7 @@ cd qua-llm
 
 ### Virtual environment
 As a standard practice in Python projects, create and activate your virtual environment.
-Run the following commands in your terminal (ideally from your VS Code):
+Run the following commands in your terminal:
 
 * create the virtual environment
 ```
@@ -45,6 +48,10 @@ To install all dependencies from the requirements.txt, run the following command
 pip install -r requirements.txt
 ```
 
+### API Key
+You will need an API key from the groq platfrom. Login to groq and create a free api key. 
+Store this key in a .env file following the pattern in the .env.example file.
+![](images/groq_api_key.png)
 
 ### Start usage
 To begin chatting with the Chatbot, initialise the server by running the following command
@@ -66,8 +73,8 @@ Create a POST request specifying the body with three parameters `model`, `query`
 
 ```
 {
+"query": "Your query goes here",
 "model": "llama-3.1-70b-versatile",
-"query": "Your query goes here"
 "temperature": "Enter a valid number between 0 and 2 here"
 }
 ```
