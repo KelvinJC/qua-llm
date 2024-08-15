@@ -1,6 +1,6 @@
 # qua llm
 
-![](images/deps.png)
+![](images/deps-2.png)
 
 A Q&A chatbot built around open source large language models including 
 ```
